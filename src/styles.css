@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+/* background: url("https://www.educationalappstore.com/blog/wp-content/uploads/2018/08/best-to-do-list-apps-for-task-management-750x350.jpg"); */
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+
+
+
+
+
+
+
+
+
+
