@@ -1,31 +1,32 @@
 <!-- <div class="container-fluid " > -->
     <!-- <div class="container "> -->
-        <div class="row mt-5 " style="height: 600px;">
-            <div class="col" style="background: transparent;"></div>
-            <div class="col-md-6  shadow" style="background: transparent;">
-                <div class="card bg-primary mt-3">
-                    <h4 class="text-white text-center ps-2 pb-2 pb-2">
+        <!-- <div class="row mt-5 " style="height: 600px;"> -->
+            <!-- <div class="col" style="background: transparent;background-color: aqua;"></div> -->
+            
+            <div class="col-md-6  shadow" style=" background-color: rgb(146, 154, 188);border-radius: 10    px;  ">
+                <div class="card  mt-3" style="background-color: black;">
+                    <h4 class="text-white text-center ps-2 pb-2 pb-2 mt-3">
                         To Do Task
                     </h4>
                 </div>
 
                 <div class="shadow">
                     <div class="input-group p-3">
-                        <input type="text" class="form-control " placeholder="Add Your Task Here"
+                        <input type="text" class="form-control  "  placeholder="Add Your Task Here"
                             aria-describedby="button-addon2 " name="task" [(ngModel)]="addTaskData">
-                        <button class="btn btn-outline-success ms-2" style="border-radius: 10;" type="button" id="button-addon2"
+                        <button class="btn btn-success ms-2" style="border-radius: 10;" type="button" id="button-addon2"
                             (click)="addTask()">Add</button>
                     </div>
                 </div>
 
-                <h3 class="text-primary mt-5">Task</h3>
+                <h3 class="text-light mt-5">Task</h3>
                 <div style="overflow-y: auto;height: 350px;">
                     <div class="m-3" *ngFor="let data of  taskArr">
-                        <div class="p-2 shadow border">
+                        <div class="p-2 shadow ">
                             <div class="input-group row ps-3">
-                                <div class="card col-md-10 container border-2 p-5 mb-5  ">{{data.task}} </div>
-                                <button class="btn btn-outline-warning w-25 m-auto " type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="callEdit(data)" >Edit</button>
-                                <button class="btn btn-outline-danger w-25  m-auto" (click)="delete(data)">Delete</button>
+                                <div class="card col-md-10 container border-2  mb-5  ">{{data.task}} </div>
+                                <button class="btn btn-warning w-25 m-auto " type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="callEdit(data)" >Edit</button>
+                                <button class="btn btn-danger w-25  m-auto" (click)="delete(data)">Delete</button>
 
                             </div>
                         </div>
@@ -56,7 +57,7 @@
 
 
             </div>
-            <div class="col"></div>
-        </div>
+            <!-- <div class="col" style="background-color: yellow;"></div> -->
+        <!-- </div> -->
     <!-- </div> -->
 <!-- </div> -->
